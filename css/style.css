@@ -156,6 +156,7 @@ h6 {
   font-weight: 700;
   font-size: 3.4375rem;
   line-height: 1.2181818182;
+  color: #3B3C3E;
 }
 @media (max-width: 47.99875em) {
   .title {
@@ -200,7 +201,6 @@ h6 {
 
 .page__background_top {
   position: relative;
-  background: url(../img/main-section/background.jpg.svg) 0 0/cover no-repeat;
 }
 
 .text {
@@ -223,6 +223,7 @@ h6 {
 ._line-2 {
   position: absolute;
   right: 0;
+  top: 0;
   z-index: -2;
 }
 @media (max-width: 29.99875em) {
@@ -327,6 +328,7 @@ h6 {
   bottom: -30%;
   right: 0;
   background: url("../img/icons/lines.svg") 0 0/cover no-repeat;
+  z-index: -1;
 }
 @media (max-width: 29.99875em) {
   .menu__body::after {
@@ -467,23 +469,23 @@ h6 {
 }
 
 .main-section {
-  padding-bottom: 20.25rem;
+  margin-bottom: 20.25rem;
   padding-top: 13.125rem;
 }
 @media (max-width: 61.99875em) {
   .main-section {
-    padding-bottom: 15.625rem;
+    margin-bottom: 15.625rem;
   }
 }
 @media (max-width: 47.99875em) {
   .main-section {
     padding-top: 10.625rem;
-    padding-bottom: 12.5rem;
+    margin-bottom: 12.5rem;
   }
 }
 @media (max-width: 29.99875em) {
   .main-section {
-    padding-bottom: 9.375rem;
+    margin-bottom: 9.375rem;
   }
 }
 .main-section__row {
@@ -536,10 +538,10 @@ h6 {
 }
 
 .advantages {
-  padding-bottom: 3.75rem;
+  margin-bottom: 3.75rem;
 }
 .advantages__title {
-  padding-bottom: 3.4375rem;
+  margin-bottom: 3.4375rem;
 }
 .advantages__text-top {
   font-size: 1.5625rem;
@@ -593,7 +595,7 @@ h6 {
 }
 @media (max-width: 47.99875em) {
   .advantages__item_text {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
   }
 }
 .advantages__text-bottom {
@@ -605,7 +607,8 @@ h6 {
 }
 @media (max-width: 47.99875em) {
   .advantages__text-bottom {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
+    text-align: center;
   }
 }
 
@@ -641,16 +644,17 @@ h6 {
 }
 @media (max-width: 47.99875em) {
   .time__title {
-    font-size: 1.3125rem;
+    font-size: 1.25rem;
+    text-align: center;
   }
 }
 
 .ecp {
-  padding: 14.0625rem 0 25rem 0;
+  margin: 14.0625rem 0 25rem 0;
 }
 @media (max-width: 47.99875em) {
   .ecp {
-    padding: 4.0625rem 0 6.25rem 0;
+    margin: 4.0625rem 0 6.25rem 0;
   }
 }
 .ecp__title {
@@ -791,11 +795,11 @@ h6 {
 }
 
 .scenario {
-  padding: 18.75rem 0;
+  margin: 18.75rem 0;
 }
 @media (max-width: 61.99875em) {
   .scenario {
-    padding: 7.5rem 0;
+    margin: 7.5rem 0;
   }
 }
 .scenario__title {
@@ -823,7 +827,7 @@ h6 {
 }
 .item-scenario {
   padding: 1.875rem;
-  background: #ffffff;
+  background: #eee;
   border-radius: 20px;
 }
 .item-scenario__title {
@@ -842,9 +846,14 @@ h6 {
     padding-bottom: 1.25rem;
   }
 }
+@media (max-width: 47.99875em) {
+  .item-scenario__text p {
+    text-align: left;
+  }
+}
 
 .form-section__container {
-  padding-bottom: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 @media (max-width: 47.99875em) {
   .form-section__container {
@@ -853,7 +862,7 @@ h6 {
 }
 @media (max-width: 29.99875em) {
   .form-section__container {
-    padding-bottom: 3.75rem;
+    margin-bottom: 3.75rem;
   }
 }
 .form-section__title {
@@ -864,25 +873,25 @@ h6 {
   padding-bottom: 2.5rem;
   font-size: 1.25rem;
 }
-@media (max-width: 47.99875em) {
-  .form-section__text {
-    font-size: 1.125rem;
-  }
-}
 .form-section form {
   max-width: 530px;
   margin: auto;
 }
 .form-section form input {
+  background-color: #fff;
   width: 100%;
   display: block;
   font-size: 1.25rem;
   padding: 1.0625rem;
   padding-left: 1.875rem;
-  background: rgba(255, 255, 255, 0.4);
   border: 1px solid #AB49AD;
   border-radius: 100px;
   margin-bottom: 1.875rem;
+}
+@media (max-width: 47.99875em) {
+  .form-section form input {
+    font-size: 1.125rem;
+  }
 }
 .form-section__btn {
   width: 100%;

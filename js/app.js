@@ -3511,7 +3511,10 @@
             html.classList.remove("menu-open");
             html.classList.remove("lock");
         }));
-        window["FLS"] = true;
+        const scrollLlink = document.querySelectorAll("._scroll");
+        scrollLlink.forEach((el => {
+            el.dataset.goto = "#" + el.href.split("#")[1];
+        }));
         isWebp();
         menuInit();
         pageNavigation();
